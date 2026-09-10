@@ -1,0 +1,589 @@
+// Auto-generated from Clark's content doc, Section 4 (Comparing the 2025
+// and 2026 lists), cross-checked against the actual TIME100 AI 2025 list.
+// Each entry: { name, note, status, profile_id, url_2025, url_2025_label }
+// - status: "new" | "returning" | "dropped"
+// - profile_id: id into PROFILES (js/data.js) for this person's 2026 card,
+//   null for a "dropped" person who isn't on the 2026 list at all.
+// - url_2025: link to this person's TIME100 AI 2025 profile (or, for a
+//   couple of "dropped" people who were actually on the 2024 list rather
+//   than 2025, their 2024 profile instead -- see url_2025_label).
+// - url_2025_label: set only when url_2025 needs an explanatory label
+//   (a shared profile, or a 2024-not-2025 profile).
+//
+// Note: several people the content doc listed as "returning" from 2025,
+// or "dropped" after 2025, do not actually appear on TIME's real 2025
+// list. Those were corrected with Clark: most moved to "new", and Demis
+// Hassabis / Andrej Karpathy stayed in "dropped" but link to their 2024
+// profile instead, flagged with url_2025_label.
+
+const COMPARISON = {
+  "new": [
+    {
+      "name": "Michael Truell",
+      "note": "Cursor / Anysphere",
+      "status": "new",
+      "profile_id": "michael-truell",
+      "url_2025": null
+    },
+    {
+      "name": "Peter Steinberger",
+      "note": "OpenClaw",
+      "status": "new",
+      "profile_id": "peter-steinberger",
+      "url_2025": null
+    },
+    {
+      "name": "Mikey Shulman",
+      "note": "Suno",
+      "status": "new",
+      "profile_id": "mikey-shulman",
+      "url_2025": null
+    },
+    {
+      "name": "Xiao Hong",
+      "note": "Manus",
+      "status": "new",
+      "profile_id": "xiao-hong",
+      "url_2025": null
+    },
+    {
+      "name": "Winston Weinberg",
+      "note": "Harvey",
+      "status": "new",
+      "profile_id": "winston-weinberg",
+      "url_2025": null
+    },
+    {
+      "name": "Yang Zhilin",
+      "note": "Moonshot AI",
+      "status": "new",
+      "profile_id": "yang-zhilin",
+      "url_2025": null
+    },
+    {
+      "name": "Zhang Peng",
+      "note": "Zhipu AI",
+      "status": "new",
+      "profile_id": "zhang-peng",
+      "url_2025": null
+    },
+    {
+      "name": "Chad Edwards",
+      "note": "CuspAI",
+      "status": "new",
+      "profile_id": "chad-edwards",
+      "url_2025": null
+    },
+    {
+      "name": "Hon Weng Chong",
+      "note": "Cortical Labs",
+      "status": "new",
+      "profile_id": "hon-weng-chong",
+      "url_2025": null
+    },
+    {
+      "name": "Daniel Nadler",
+      "note": "OpenEvidence",
+      "status": "new",
+      "profile_id": "daniel-nadler",
+      "url_2025": null
+    },
+    {
+      "name": "Brendan Foody",
+      "note": "Mercor",
+      "status": "new",
+      "profile_id": "brendan-foody",
+      "url_2025": null
+    },
+    {
+      "name": "Deng Taihua",
+      "note": "AGIBOT",
+      "status": "new",
+      "profile_id": "deng-taihua",
+      "url_2025": null
+    },
+    {
+      "name": "Utkarsh Saxena",
+      "note": "Adalat AI",
+      "status": "new",
+      "profile_id": "utkarsh-saxena",
+      "url_2025": null
+    },
+    {
+      "name": "Uljan Sharka",
+      "note": "Domyn",
+      "status": "new",
+      "profile_id": "uljan-sharka",
+      "url_2025": null
+    },
+    {
+      "name": "Mohamed Moussa",
+      "note": "Tarteel",
+      "status": "new",
+      "profile_id": "mohamed-moussa",
+      "url_2025": null
+    },
+    {
+      "name": "Josh Payne",
+      "note": "Nscale",
+      "status": "new",
+      "profile_id": "josh-payne",
+      "url_2025": null
+    },
+    {
+      "name": "Moustapha Cissé",
+      "note": "Kera Health Platforms",
+      "status": "new",
+      "profile_id": "moustapha-cisse",
+      "url_2025": null
+    },
+    {
+      "name": "Azalia Mirhoseini",
+      "note": "Ricursive Intelligence",
+      "status": "new",
+      "profile_id": "azalia-mirhoseini-and-anna-goldie",
+      "url_2025": null
+    },
+    {
+      "name": "Anna Goldie",
+      "note": "Ricursive Intelligence",
+      "status": "new",
+      "profile_id": "azalia-mirhoseini-and-anna-goldie",
+      "url_2025": null
+    },
+    {
+      "name": "Suchi Saria",
+      "note": "Bayesian Health",
+      "status": "new",
+      "profile_id": "suchi-saria",
+      "url_2025": null
+    },
+    {
+      "name": "Andrew Feldman",
+      "note": "Cerebras Systems",
+      "status": "new",
+      "profile_id": "andrew-feldman",
+      "url_2025": null
+    },
+    {
+      "name": "Mira Murati",
+      "note": "Thinking Machines Lab",
+      "status": "new",
+      "profile_id": "mira-murati",
+      "url_2025": null
+    },
+    {
+      "name": "Ilya Sutskever",
+      "note": "Safe Superintelligence / SSI",
+      "status": "new",
+      "profile_id": "ilya-sutskever",
+      "url_2025": null
+    },
+    {
+      "name": "Mark Chen",
+      "note": "OpenAI",
+      "status": "new",
+      "profile_id": "mark-chen-sam-altman-and-greg-brockman",
+      "url_2025": null
+    },
+    {
+      "name": "Greg Brockman",
+      "note": "OpenAI",
+      "status": "new",
+      "profile_id": "mark-chen-sam-altman-and-greg-brockman",
+      "url_2025": null
+    },
+    {
+      "name": "Matt Garman",
+      "note": "Amazon Web Services",
+      "status": "new",
+      "profile_id": "matt-garman",
+      "url_2025": null
+    },
+    {
+      "name": "Eddie Wu",
+      "note": "Alibaba",
+      "status": "new",
+      "profile_id": "eddie-wu",
+      "url_2025": null
+    },
+    {
+      "name": "Liang Rubo",
+      "note": "ByteDance",
+      "status": "new",
+      "profile_id": "liang-rubo",
+      "url_2025": null
+    },
+    {
+      "name": "He Tingbo",
+      "note": "Huawei / HiSilicon",
+      "status": "new",
+      "profile_id": "he-tingbo",
+      "url_2025": null
+    },
+    {
+      "name": "Liang Mong Song",
+      "note": "SMIC",
+      "status": "new",
+      "profile_id": "liang-mong-song",
+      "url_2025": null
+    },
+    {
+      "name": "Elizabeth Reid",
+      "note": "Google Head of Search",
+      "status": "new",
+      "profile_id": "elizabeth-reid",
+      "url_2025": null
+    },
+    {
+      "name": "Andy Konwinski",
+      "note": "Perplexity / Databricks / Laude",
+      "status": "new",
+      "profile_id": "andy-konwinski",
+      "url_2025": null
+    },
+    {
+      "name": "Josh Parker",
+      "note": "Nvidia, Head of Sustainability",
+      "status": "new",
+      "profile_id": "josh-parker",
+      "url_2025": null
+    },
+    {
+      "name": "Lila Ibrahim",
+      "note": "Google DeepMind, Chief AI Readiness Officer",
+      "status": "new",
+      "profile_id": "lila-ibrahim",
+      "url_2025": null
+    },
+    {
+      "name": "Joe Dominguez",
+      "note": "Constellation Energy Group",
+      "status": "new",
+      "profile_id": "joe-dominguez",
+      "url_2025": null
+    },
+    {
+      "name": "A.G. Sulzberger",
+      "note": "The New York Times Co.",
+      "status": "new",
+      "profile_id": "a-g-sulzberger",
+      "url_2025": null
+    },
+    {
+      "name": "Ben Affleck",
+      "note": "Actor/Filmmaker, Artists Equity",
+      "status": "new",
+      "profile_id": "ben-affleck",
+      "url_2025": null
+    },
+    {
+      "name": "Joseph Gordon-Levitt",
+      "note": "Creators Coalition on AI",
+      "status": "new",
+      "profile_id": "joseph-gordon-levitt",
+      "url_2025": null
+    },
+    {
+      "name": "Paris Hilton",
+      "note": "Deepfake Legislation Advocate",
+      "status": "new",
+      "profile_id": "paris-hilton",
+      "url_2025": null
+    },
+    {
+      "name": "Bernie Sanders",
+      "note": "U.S. Senator",
+      "status": "new",
+      "profile_id": "bernie-sanders",
+      "url_2025": null
+    },
+    {
+      "name": "David Sacks",
+      "note": "PCAST Co-Chair",
+      "status": "new",
+      "profile_id": "david-sacks",
+      "url_2025": null
+    },
+    {
+      "name": "Emil Michael",
+      "note": "U.S. Dept of Defense CTO",
+      "status": "new",
+      "profile_id": "emil-michael",
+      "url_2025": null
+    },
+    {
+      "name": "Arvind Raman",
+      "note": "U.S. CAISI / NIST",
+      "status": "new",
+      "profile_id": "arvind-raman",
+      "url_2025": null
+    },
+    {
+      "name": "Doreen Bogdan-Martin",
+      "note": "UN ITU",
+      "status": "new",
+      "profile_id": "doreen-bogdan-martin",
+      "url_2025": null
+    },
+    {
+      "name": "Liz Shuler",
+      "note": "AFL-CIO President",
+      "status": "new",
+      "profile_id": "liz-shuler",
+      "url_2025": null
+    },
+    {
+      "name": "Erin Brockovich",
+      "note": "Brockovich AI Data Center Reporting",
+      "status": "new",
+      "profile_id": "erin-brockovich",
+      "url_2025": null
+    },
+    {
+      "name": "Yann LeCun",
+      "note": "Meta / Advanced Machine Intelligence Labs",
+      "status": "new",
+      "profile_id": "yann-lecun",
+      "url_2025": null
+    },
+    {
+      "name": "Arvind Krishna",
+      "note": "CEO, IBM",
+      "status": "new",
+      "profile_id": "arvind-krishna",
+      "url_2025": null
+    },
+    {
+      "name": "Hock Tan",
+      "note": "CEO, Broadcom",
+      "status": "new",
+      "profile_id": "hock-tan",
+      "url_2025": null
+    },
+    {
+      "name": "Jeff Bezos",
+      "note": "Amazon Founder / Prometheus",
+      "status": "new",
+      "profile_id": "jeff-bezos",
+      "url_2025": null
+    },
+    {
+      "name": "Larry Ellison",
+      "note": "Oracle",
+      "status": "new",
+      "profile_id": "larry-ellison",
+      "url_2025": null
+    },
+    {
+      "name": "Daniela Rus",
+      "note": "Director, MIT CSAIL / Liquid AI",
+      "status": "new",
+      "profile_id": "daniela-rus",
+      "url_2025": null
+    },
+    {
+      "name": "Pat Grady",
+      "note": "Sequoia Capital",
+      "status": "new",
+      "profile_id": "pat-grady-and-alfred-lin",
+      "url_2025": null
+    },
+    {
+      "name": "Alfred Lin",
+      "note": "Sequoia Capital",
+      "status": "new",
+      "profile_id": "pat-grady-and-alfred-lin",
+      "url_2025": null
+    },
+    {
+      "name": "Sarah Guo",
+      "note": "Conviction",
+      "status": "new",
+      "profile_id": "sarah-guo",
+      "url_2025": null
+    },
+    {
+      "name": "Philip Colligan",
+      "note": "Raspberry Pi Foundation",
+      "status": "new",
+      "profile_id": "philip-colligan",
+      "url_2025": null
+    },
+    {
+      "name": "Beth Barnes",
+      "note": "METR",
+      "status": "new",
+      "profile_id": "beth-barnes",
+      "url_2025": null
+    }
+  ],
+  "returning": [
+    {
+      "name": "Sam Altman",
+      "note": "CEO, OpenAI",
+      "status": "returning",
+      "profile_id": "mark-chen-sam-altman-and-greg-brockman",
+      "url_2025": "https://time.com/collections/time100-ai-2025/7305828/sam-altman-ai/"
+    },
+    {
+      "name": "Dario Amodei",
+      "note": "Anthropic",
+      "status": "returning",
+      "profile_id": "dario-and-daniela-amodei",
+      "url_2025": "https://time.com/collections/time100-ai-2025/7305835/dario-amodei-ai/"
+    },
+    {
+      "name": "Daniela Amodei",
+      "note": "Anthropic",
+      "status": "returning",
+      "profile_id": "dario-and-daniela-amodei",
+      "url_2025": "https://time.com/collections/time100-ai-2025/7305835/dario-amodei-ai/",
+      "url_2025_label": "2025 profile (shared with Dario Amodei)"
+    },
+    {
+      "name": "Elon Musk",
+      "note": "xAI / SpaceX",
+      "status": "returning",
+      "profile_id": "elon-musk",
+      "url_2025": "https://time.com/collections/time100-ai-2025/7305842/elon-musk-ai/"
+    },
+    {
+      "name": "Fei-Fei Li",
+      "note": "Stanford HAI / World Labs",
+      "status": "returning",
+      "profile_id": "fei-fei-li",
+      "url_2025": "https://time.com/collections/time100-ai-2025/7305810/fei-fei-li/"
+    },
+    {
+      "name": "Ravi Kumar S.",
+      "note": "CEO, Cognizant",
+      "status": "returning",
+      "profile_id": "ravi-kumar-s",
+      "url_2025": "https://time.com/collections/time100-ai-2025/7305789/ravi-kumar-s/"
+    }
+  ],
+  "dropped": [
+    {
+      "name": "Jensen Huang",
+      "note": "CEO, Nvidia (replaced by Nvidia's Head of Sustainability, Josh Parker)",
+      "status": "dropped",
+      "profile_id": null,
+      "url_2025": "https://time.com/collections/time100-ai-2025/7305861/jensen-huang-ai/"
+    },
+    {
+      "name": "Demis Hassabis",
+      "note": "CEO, Google DeepMind (represented in 2026 by Lila Ibrahim)",
+      "status": "dropped",
+      "profile_id": null,
+      "url_2025": "https://time.com/7012767/demis-hassabis/",
+      "url_2025_label": "2024 profile (not on the 2025 list)"
+    },
+    {
+      "name": "Liang Wenfeng",
+      "note": "CEO, DeepSeek",
+      "status": "dropped",
+      "profile_id": null,
+      "url_2025": "https://time.com/collections/time100-ai-2025/7305843/liang-wenfeng-ai/"
+    },
+    {
+      "name": "Andrej Karpathy",
+      "note": "Researcher",
+      "status": "dropped",
+      "profile_id": null,
+      "url_2025": "https://time.com/7012851/andrej-karpathy/",
+      "url_2025_label": "2024 profile (not on the 2025 list)"
+    },
+    {
+      "name": "Mark Zuckerberg",
+      "note": "CEO, Meta",
+      "status": "dropped",
+      "profile_id": null,
+      "url_2025": "https://time.com/collections/time100-ai-2025/7305856/mark-zuckerberg-ai/"
+    },
+    {
+      "name": "Andy Jassy",
+      "note": "CEO, Amazon",
+      "status": "dropped",
+      "profile_id": null,
+      "url_2025": "https://time.com/collections/time100-ai-2025/7305821/andy-jassy/"
+    },
+    {
+      "name": "Alexandr Wang",
+      "note": "Meta Superintelligence Lab",
+      "status": "dropped",
+      "profile_id": null,
+      "url_2025": "https://time.com/collections/time100-ai-2025/7305854/alexandr-wang-and-nat-friedman/"
+    },
+    {
+      "name": "Nat Friedman",
+      "note": "Meta Superintelligence Lab",
+      "status": "dropped",
+      "profile_id": null,
+      "url_2025": "https://time.com/collections/time100-ai-2025/7305854/alexandr-wang-and-nat-friedman/"
+    },
+    {
+      "name": "David Holz",
+      "note": "Founder, Midjourney",
+      "status": "dropped",
+      "profile_id": null,
+      "url_2025": "https://time.com/collections/time100-ai-2025/7305883/david-holz/"
+    },
+    {
+      "name": "Ren Zhengfei",
+      "note": "Founder/CEO, Huawei (replaced by HiSilicon President He Tingbo)",
+      "status": "dropped",
+      "profile_id": null,
+      "url_2025": "https://time.com/collections/time100-ai-2025/7305838/ren-zhengfei/"
+    },
+    {
+      "name": "C.C. Wei",
+      "note": "Chairman/CEO, TSMC",
+      "status": "dropped",
+      "profile_id": null,
+      "url_2025": "https://time.com/collections/time100-ai-2025/7305839/cc-wei-ai/"
+    },
+    {
+      "name": "Masayoshi Son",
+      "note": "Chairman/CEO, SoftBank",
+      "status": "dropped",
+      "profile_id": null,
+      "url_2025": "https://time.com/collections/time100-ai-2025/7305841/masayoshi-son-ai/"
+    },
+    {
+      "name": "Steve Huffman",
+      "note": "CEO, Reddit",
+      "status": "dropped",
+      "profile_id": null,
+      "url_2025": "https://time.com/collections/time100-ai-2025/7305852/steve-huffman/"
+    },
+    {
+      "name": "Matthew Prince",
+      "note": "CEO, Cloudflare",
+      "status": "dropped",
+      "profile_id": null,
+      "url_2025": "https://time.com/collections/time100-ai-2025/7305834/matthew-prince/"
+    },
+    {
+      "name": "Mike Krieger",
+      "note": "Chief Product Officer, Anthropic",
+      "status": "dropped",
+      "profile_id": null,
+      "url_2025": "https://time.com/collections/time100-ai-2025/7305832/mike-krieger/"
+    },
+    {
+      "name": "Jared Kaplan",
+      "note": "Chief Science Officer, Anthropic",
+      "status": "dropped",
+      "profile_id": null,
+      "url_2025": "https://time.com/collections/time100-ai-2025/7305824/jared-kaplan/"
+    },
+    {
+      "name": "Dr. 'Bosun Tijani",
+      "note": "Minister of Communications, Nigeria",
+      "status": "dropped",
+      "profile_id": null,
+      "url_2025": "https://time.com/collections/time100-ai-2025/7305882/bosun-tijani/"
+    }
+  ]
+};

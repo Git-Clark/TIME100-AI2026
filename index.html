@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TIME100 AI 2026 Warm-up Spinner</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="app-frame">
+
+  <header class="site-header">
+    <div class="header-top">
+      <h1 class="site-title">JMSC6140 Class 3 Warm-up: TIME100 AI 2026 Profile</h1>
+      <div class="time-badge-wrap">
+        <a class="time-badge" href="https://time.com/collection/time100-ai/2026/" target="_blank" rel="noopener">TIME</a>
+        <a class="link-to-list" href="https://time.com/collection/time100-ai/2026/" target="_blank" rel="noopener">Link to List</a>
+      </div>
+    </div>
+    <nav class="site-nav">
+      <a href="index.html" class="active">Spinner</a>
+      <span class="nav-sep">|</span>
+      <a href="full-list.html">Full List</a>
+      <span class="nav-sep">|</span>
+      <a href="whos-new.html">Who&rsquo;s New</a>
+      <span class="nav-sep">|</span>
+      <a href="about.html">About the List</a>
+    </nav>
+  </header>
+
+  <main class="site-main">
+    <div class="spinner-layout">
+      <div class="photo-column">
+        <div class="photo-frame" id="photoFrame">
+          <img class="frame-placeholder-img" id="framePlaceholderImg" src="images/frame-placeholder.jpg" alt="TIME100 AI 2026">
+          <img id="photoImg" src="" alt="">
+        </div>
+        <div class="spin-controls">
+          <button class="spin-button" id="spinButton" type="button">Spin Here</button>
+          <button class="choose-button" id="chooseButton" type="button" hidden>Choose Profile</button>
+        </div>
+      </div>
+
+      <div class="spin-side">
+        <div id="introBlock">
+          <h2 class="spin-heading">TIME100 AI 2026</h2>
+          <p class="spin-objective">Objective: Spin and select a profile to do research on one of the 100 most influential people in AI according to Time magazine.</p>
+        </div>
+
+        <div class="result-panel" id="resultPanel">
+          <p class="result-name" id="resultName"></p>
+          <p class="result-title" id="resultTitle"></p>
+          <span class="result-category" id="resultCategory"></span>
+          <a class="result-article-link" id="resultArticleLink" href="#" target="_blank" rel="noopener">View TIME profile &#8599;</a>
+
+          <p class="result-label">Key Questions:</p>
+          <ol class="result-questions" id="resultQuestions"></ol>
+
+          <p class="result-on-list" id="resultOnList"></p>
+
+          <a class="padlet-link" id="padletLink" href="https://padlet.com/clarkg25/my-brilliant-padlet-s023eve0kreaqfr2i4mr" target="_blank" rel="noopener">Post your answers on Padlet &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    Created by Clark Gholamipour | Designed with Claude
+  </footer>
+
+</div>
+
+<div class="chooser-overlay" id="chooserOverlay" hidden>
+  <div class="chooser-panel">
+    <div class="chooser-header">
+      <h2>Choose a Profile</h2>
+      <button class="chooser-close" id="chooserClose" type="button" aria-label="Close">&times;</button>
+    </div>
+    <div class="chooser-grid" id="chooserGrid"></div>
+  </div>
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/spinner.js"></script>
+<script src="js/chooser.js"></script>
+</body>
+</html>
