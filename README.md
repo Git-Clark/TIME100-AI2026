@@ -20,16 +20,21 @@ Industry data from your content doc, and cross-checked against TIME's own
   button lets a student who refreshed the page pick their original result
   back from a popup grouped by category, no cookies or local storage used.
 - **Full List** (`full-list.html`): every profile in a collapsible section
-  per category, with an intro line and 6 key-stats tiles above the table
-  (people featured, countries and industries represented with their top
-  value, and the list's female/male split). Each row shows Name, Title,
-  Country of Origin, Industry, and a link to the person's 2026 article.
+  per category, with an intro line and 3 key-stats tiles above the table
+  (People Featured, Countries Represented, Industries Represented).
+  Hovering a tile (desktop) or tapping it (mobile, with an X to close)
+  shows the underlying breakdown: gender split, the full country list, or
+  the full industry list, both sorted most to fewest. Each row shows a
+  thumbnail, Name, Title, Country of Origin, Industry, and a link to the
+  person's 2026 article; the columns keep a fixed 1:1:1:2:2:3 width ratio
+  (thumbnail/Country/Industry : Name/2026 link : Title).
 - **Who's New** (`whos-new.html`): three tiers built from Section 4 of
   your content doc (New for 2026 / Returning From 2025 / Left the List
-  After 2025), text links only, no headshots. Counting is done per person
-  (100 people), not per profile card (95 cards -- a few cards are shared
-  by 2-3 people). Returning people show both their 2025 and 2026 profile
-  links.
+  After 2025). Each person is a small uniform card stacking their name,
+  company/position, and profile link(s); 2 columns on mobile, a natural
+  multi-column flow on desktop. Counting is done per person (100 people),
+  not per profile card (95 cards -- a few cards are shared by 2-3 people).
+  Returning people show both their 2025 and 2026 profile links.
 - **About the List** (`about.html`): your own write-up on the list, plus
   links to TIME's official "how we chose" methodology article and the
   full 2026 collection.
@@ -49,14 +54,21 @@ Industry data from your content doc, and cross-checked against TIME's own
   Andrej Karpathy were kept in "left the list" but link to their 2024
   profile instead, labeled as such, since that's the list they were
   actually on. This was confirmed with you before building the page.
-- Full List key-stats tiles (countries, industries, top country/industry)
-  are counted per profile card (95), not per person (100), since country
-  and industry are recorded once per card. The gender split (31% female /
-  69% male) is the aggregate figure you supplied for the list as a whole;
-  there's no per-person gender field in the data.
+- Full List key-stats tiles (countries, industries) are counted per
+  profile card (95), not per person (100), since country and industry are
+  recorded once per card. The gender split shown on the People Featured
+  tile (31% female / 69% male) is the aggregate figure you supplied for
+  the list as a whole; there's no per-person gender field in the data.
 - Industry values are TIME's/your doc's own free-text labels (e.g. "AI/
   Research" vs. "AI" vs. "Technology" appear as separate values), not
   normalized into broader buckets.
+- Headshots are JPEGs (converted from the original PNG screenshots to cut
+  file size for faster loading -- same images, no visible quality loss).
+  If you ever add a new headshot, save it as a .jpg to keep the page fast.
+- The page background now fills the whole browser window (no bordered
+  frame), with the content itself capped at a readable width and centered.
+  This was changed from an earlier framed-box look that left large black
+  bars on wide monitors.
 
 ## Running it locally
 
@@ -95,7 +107,7 @@ entry looks like:
   "title": "CEO, SPACEX",
   "category": "leaders",
   "category_label": "Leaders",
-  "photo": "images/headshots/elon-musk.png",
+  "photo": "images/headshots/elon-musk.jpg",
   "on_list_2025": true,
   "questions": [ ... ],
   "time_article_url": "https://time.com/collection/time100-ai/2026/elon-musk/",
